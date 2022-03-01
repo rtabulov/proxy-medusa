@@ -6,7 +6,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
 // Configuration
-// const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 // const HOST = 'localhost';
 const API_SERVICE_URL = 'https://meduza.io';
 // const API_SERVICE_URL = 'https://jsonplaceholder.typicode.com';
@@ -31,8 +31,6 @@ app.use(
 );
 
 // Start the Proxy
-// app.listen(PORT, () => {
-//   console.log(`Starting Proxy at ${HOST}:${PORT}`);
-// });
-
-module.exports = app;
+app.listen(PORT, () => {
+  console.log(`Starting Proxy at port ${PORT}`);
+});
