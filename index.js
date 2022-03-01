@@ -8,8 +8,8 @@ const app = express();
 // Configuration
 // const PORT = process.env.PORT || 3000;
 // const HOST = 'localhost';
-// const API_SERVICE_URL = 'https://meduza.io';
-const API_SERVICE_URL = 'https://jsonplaceholder.typicode.com';
+const API_SERVICE_URL = 'https://meduza.io';
+// const API_SERVICE_URL = 'https://jsonplaceholder.typicode.com';
 
 // Logging
 app.use(morgan('dev'));
